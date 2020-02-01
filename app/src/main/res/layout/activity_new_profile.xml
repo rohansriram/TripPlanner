@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewProfileActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:popupTheme="@style/MenuStyle"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Hi!This is your dashboard please explore by clicking on the below buttons."
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAlignment="center"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/button_mytrips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="My Trips" />
+
+    <Button
+        android:id="@+id/button_createtrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="CREATE TRIP" />
+
+
+    <Button
+        android:id="@+id/button_discovertrips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discover New Trips"
+        android:layout_margin="30dp"/>
+
+    <Button
+        android:id="@+id/button_discoverpeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Discover People" />
+
+</LinearLayout>

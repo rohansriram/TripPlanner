@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chat_sent_rounded_background"
+    android:padding="8dp"
+    android:layout_gravity="end">
+
+
+    <ImageView
+        android:id="@+id/imageView_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_gravity="end"
+        android:visibility="invisible"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/sender_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="end"
+        android:text="sender name"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/messagechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sender_name"
+        android:layout_gravity="end"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="message"></TextView>
+
+
+    <TextView
+        android:id="@+id/timechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_alignParentEnd="true"
+        android:text="Time"></TextView>
+
+</RelativeLayout>

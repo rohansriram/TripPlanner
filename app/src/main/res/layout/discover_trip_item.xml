@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="188dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView_tripcoverpic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView_tripcoverpic"
+            android:layout_width="181dp"
+            android:layout_height="158dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/button_joinnew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="16dp"
+            android:text="JOIN TRIP"
+            app:layout_constraintStart_toEndOf="@+id/imageView_tripcoverpic"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
